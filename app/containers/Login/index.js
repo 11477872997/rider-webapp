@@ -116,7 +116,7 @@ export class Login extends React.PureComponent {
     return (
       <div className="login-container">
         <div className="login-panel">
-          <h2 className="login-title">Wormhole Rider</h2>
+          <h2 className="login-title">GZPI实时流式处理平台</h2>
           <Form name="Form1">
             <FormItem>
               {getFieldDecorator('userName', {
@@ -139,7 +139,7 @@ export class Login extends React.PureComponent {
               )}
             </FormItem>
           </Form>
-          <Button size="large" onClick={this.doLogin}>Sign in</Button>
+          <Button size="large" onClick={this.doLogin}>登录</Button>
 
         </div>
         <div id="loginBg"></div>
