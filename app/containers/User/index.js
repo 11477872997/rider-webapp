@@ -598,15 +598,14 @@ export class User extends React.PureComponent {
         {helmetHide}
         <div className="ri-workbench-table ri-common-block">
             <h3 className="ri-common-block-title">
-              <Icon type="bars" /> <FormattedMessage {...messages.userUser} /><FormattedMessage {...messages.userTableList} />
+             <Icon type="bars" /> <FormattedMessage {...messages.userUser} /><FormattedMessage {...messages.userTableList} />
             </h3>
-            <div className="ri-common-block-tools">
+          <div className="ri-common-block-tools">
               <Button icon="plus" type="primary" onClick={this.showAdd} className={userClassHide}>
                 <FormattedMessage {...messages.userTableCreate} />
               </Button>
               <Button icon="reload" type="ghost" className="refresh-button-style" loading={refreshUserLoading} onClick={this.refreshUser}>{refreshUserText}</Button>
-            </div>
-          
+           </div>
           <Table
             dataSource={this.state.currentUsers}
             columns={columns}
@@ -617,7 +616,7 @@ export class User extends React.PureComponent {
           </Table>
         </div>
         <Modal
-         maskClosable={false}
+          maskClosable={false}
           title={userTitle}
           okText="保存"
           wrapClassName="db-form-style"

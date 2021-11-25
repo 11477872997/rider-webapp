@@ -1182,7 +1182,7 @@ export class FlowTransformForm extends React.Component {
           ) : ''}
           {flowSubPanelKey === 'flink' ? (
             <Modal
-            maskClosable={false}
+              maskClosable={false}
               title="Pattern"
               okText="确定"
               visible={patternModalShow}

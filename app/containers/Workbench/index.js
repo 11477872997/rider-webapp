@@ -3730,7 +3730,7 @@ export class Workbench extends React.Component {
                   />
                     {/* Flow Transform Modal */}
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Transformation"
                       okText="保存"
                       wrapClassName="transform-form-style"
@@ -3761,7 +3761,7 @@ export class Workbench extends React.Component {
                     </Modal>
                     {/* Flow Sink Config Modal */}
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Sink Config"
                       okText="保存"
                       wrapClassName="ant-modal-large"
@@ -3780,7 +3780,7 @@ export class Workbench extends React.Component {
                     </Modal>
                     {/* Flow Transformation Config Modal */}
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Transformation Config"
                       okText="保存"
                       wrapClassName="ant-modal-large"
@@ -3798,7 +3798,7 @@ export class Workbench extends React.Component {
                     </Modal>
                     {/* ETP Strategy Modal */}
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Event Time Processing Strategy"
                       okText="保存"
                       visible={etpStrategyModalVisible}
@@ -3860,7 +3860,7 @@ export class Workbench extends React.Component {
                     />
                     {/* Config Modal */}
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Configs"
                       okText="保存"
                       wrapClassName="ant-modal-large"
@@ -3966,7 +3966,7 @@ export class Workbench extends React.Component {
                       ref={(f) => { this.workbenchJobForm = f }}
                     />
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Configs"
                       okText="保存"
                       wrapClassName="ant-modal-large"
@@ -3980,7 +3980,7 @@ export class Workbench extends React.Component {
                     </Modal>
                     {/* Job Sink Config Modal */}
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Sink Config"
                       okText="保存"
                       wrapClassName="ant-modal-large"
@@ -3999,7 +3999,7 @@ export class Workbench extends React.Component {
                     </Modal>
                     {/* Job Transform Modal */}
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Transformation"
                       okText="保存"
                       wrapClassName="job-transform-form-style"
@@ -4018,7 +4018,7 @@ export class Workbench extends React.Component {
                     </Modal>
                     {/* Job Transformation Config Modal */}
                     <Modal
-                     maskClosable={false}
+                      maskClosable={false}
                       title="Transformation Config"
                       okText="保存"
                       wrapClassName="ant-modal-large"

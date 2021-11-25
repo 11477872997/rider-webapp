@@ -2531,7 +2531,7 @@ export class Flow extends React.Component {
         {helmetHide}
 
         <h3 className="ri-common-block-title">
-          <Icon type="bars" />  <FormattedMessage {...messages.flowFlow} /><FormattedMessage {...messages.flowTableList} />
+          <Icon type="bars" /><FormattedMessage {...messages.flowFlow} /><FormattedMessage {...messages.flowTableList} />
         </h3>
         <div className="ri-common-block-tools">
           {FlowAddOrNot}
@@ -2555,7 +2555,7 @@ export class Flow extends React.Component {
           bordered
         />
         <Modal
-         maskClosable={false}
+          maskClosable={false}
           visible={modalVisible}
           onCancel={this.handleCancel}
           wrapClassName="ant-modal-xlarge ant-modal-no-footer"
@@ -2576,7 +2576,7 @@ export class Flow extends React.Component {
           />
         </Modal>
 
-        <Modal  maskClosable={false} title="设置时间" visible={timeModalVisible} onCancel={this.handleTimeCancel} onOk={this.handleTimeOk}>
+        <Modal maskClosable={false} title="设置时间" visible={timeModalVisible} onCancel={this.handleTimeCancel} onOk={this.handleTimeOk}>
           <FlowsTime
             ref={f => {
               this.flowsTime = f
@@ -2619,7 +2619,7 @@ export class Flow extends React.Component {
           {flowStartForm}
         </Modal>
         <Modal
-         maskClosable={false}
+          maskClosable={false}
           title={'Drift'}
           visible={driftModalVisible}
           wrapClassName="stream-start-renew-modal"
@@ -2643,7 +2643,7 @@ export class Flow extends React.Component {
           </Form>
         </Modal>
         <Modal
-         maskClosable={false}
+          maskClosable={false}
           title={this.state.performanceModelTitle}
           visible={performanceModalVisible}
           onCancel={this.closePerformanceDialog}
@@ -2653,7 +2653,7 @@ export class Flow extends React.Component {
           {performanceChart}
         </Modal>
         <Modal
-         maskClosable={false}
+          maskClosable={false}
           title="Logs"
           visible={logsModalVisible}
           onCancel={this.handleLogsCancel}
@@ -2673,7 +2673,7 @@ export class Flow extends React.Component {
           />
         </Modal>
         <Modal
-         maskClosable={false}
+          maskClosable={false}
           title={this.state.errorListModelTitle}
           visible={errorListVisible}
           onCancel={this.closeErrorListModal}
