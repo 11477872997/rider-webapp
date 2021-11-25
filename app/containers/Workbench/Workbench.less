@@ -30,15 +30,15 @@
   .ri-mb-body {
     padding: 0 20px;
     table {
-      border-color: @ri-bg-color;
+      // border-color: @ri-bg-color;
     }
     .ant-table-thead > tr > th {
-      border-right-color: @ri-bg-color;
-      border-bottom-color: @ri-bg-color;
+      // border-right-color: @ri-bg-color;
+      // border-bottom-color: @ri-bg-color;
     }
     .ant-table-tbody > tr > td {
-      border-right-color: @ri-bg-color;
-      border-bottom-color: @ri-bg-color;
+      // border-right-color: @ri-bg-color;
+      // border-bottom-color: @ri-bg-color;
     }
   }
 }
@@ -120,8 +120,9 @@
   /* override ant-table style */
   .@{table-prefix-cls} {
     &-thead > tr > th {
-      background-color: darken(@ri-bg-color, 10%);
-      border-bottom-color: @ri-workbench-border-color;
+      // background-color: darken(@ri-bg-color, 10%);
+      background-color:@ri-bg-color;
+      // border-bottom-color: @ri-workbench-border-color;
       .@{iconfont-css-prefix}-filter {
         color: @light-text-color;
         &:hover {
@@ -141,7 +142,8 @@
       &:hover {
         background: none;
         & > td {
-          background-color: fade(tint(@primary-color, 90%), 70);
+          // background-color: fade(tint(@primary-color, 90%), 70);
+          background: #ccc;
           transition: all .3s ease;
         }
       }
@@ -616,7 +618,7 @@
   margin-top: -38px;
 
   .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
-    padding: 5px 5px !important;
+    // padding: 5px 5px !important;
   }
   .iconfont {
     font-size: 15px !important;

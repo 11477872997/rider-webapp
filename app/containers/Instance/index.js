@@ -596,7 +596,7 @@ export class Instance extends React.PureComponent {
         <Helmet title="Instance" />
         <div className="ri-workbench-table ri-common-block">
           <h3 className="ri-common-block-title">
-            <Icon type="bars" /> Instance <FormattedMessage {...messages.instanceTableList} />
+            <Icon type="bars" />  <FormattedMessage {...messages.instanceInstance} /><FormattedMessage {...messages.instanceTableList} />
           </h3>
           <div className="ri-common-block-tools">
             <Button icon="plus" type="primary" onClick={this.showAddInstance}>
@@ -614,6 +614,7 @@ export class Instance extends React.PureComponent {
           </Table>
         </div>
         <Modal
+         maskClosable={false}
           title={modalTitle}
           okText="保存"
           wrapClassName="instance-form-style"

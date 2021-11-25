@@ -61,8 +61,8 @@ export class App extends React.Component {
     return (
       <div>
         <Helmet
-          titleTemplate="GZPI实时流式处理平台"
-          defaultTitle="GZPI实时流式处理平台"
+          titleTemplate="数据治理平台-实时处理系统"
+          defaultTitle="数据治理平台-实时处理系统"
           meta={[
             { name: 'description', content: 'Wormhole Rider Web Application' }
           ]}

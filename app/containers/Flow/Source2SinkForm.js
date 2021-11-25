@@ -226,6 +226,7 @@ export class Source2SinkForm extends React.Component {
         </div>
 
         <Modal
+         maskClosable={false}
           title="设置时间"
           visible={this.state.sinkTimeModalVisible}
           onCancel={this.handleSinkTimeCancel}

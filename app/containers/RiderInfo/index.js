@@ -47,7 +47,7 @@ export class RiderInfo extends React.Component {
       <div className={`ri-workbench-table ri-common-block`}>
         <Helmet title="Rider Info" />
         <h3 className="ri-common-block-title">
-          <Icon type="bars" /> Rider Info <FormattedMessage {...messages.riderInfoTableList} />
+          <Icon type="bars" /> <FormattedMessage {...messages.riderRiderInfo} /><FormattedMessage {...messages.riderInfoTableList} />
         </h3>
         <Form className="rider-info-class">
           <Row>

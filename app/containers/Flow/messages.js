@@ -47,5 +47,6 @@ export default defineMessages({
   streamSureStart: { id: 'rider.app.table.sure.start' },
   flowErrorList: { id: 'rider.app.table.error.list.action' },
   errorListBackfillData: { id: 'rider.app.table.error.list.backfill.data.action' },
-  errorListBackfillHistory: { id: 'rider.app.table.error.list.backfill.history.action' }
+  errorListBackfillHistory: { id: 'rider.app.table.error.list.backfill.history.action' },
+  flowFlow: { id: 'rider.components.Navigator.Flow' },
 })

@@ -36,5 +36,6 @@ export default defineMessages({
   userPassword: { id: 'rider.containers.User.table.user.password' },
   userSurePassword: { id: 'rider.containers.User.table.user.sure.password' },
   userModalName: { id: 'rider.containers.User.table.user.name' },
-  userModalRoleType: { id: 'rider.containers.User.table.user.roletype' }
+  userModalRoleType: { id: 'rider.containers.User.table.user.roletype' },
+  userUser: { id: 'rider.components.Navigator.User' },
 })

@@ -1809,7 +1809,7 @@ export class Namespace extends React.PureComponent {
         {helmetHide}
         <div className="ri-workbench-table ri-common-block">
           <h3 className="ri-common-block-title">
-            <Icon type="bars" /> Namespace <FormattedMessage {...messages.nsTableTitle} />
+            <Icon type="bars" /> <FormattedMessage {...messages.nsNamespace} /><FormattedMessage {...messages.nsTableTitle} />
           </h3>
           <div className="ri-common-block-tools">
             <Button icon="plus" type="primary" className={namespaceClassHide} onClick={this.showAddNamespace}>
@@ -1827,6 +1827,7 @@ export class Namespace extends React.PureComponent {
           </Table>
         </div>
         <Modal
+         maskClosable={false}
           title={modalTitle}
           okText="保存"
           wrapClassName="db-form-style"
@@ -1876,6 +1877,7 @@ export class Namespace extends React.PureComponent {
         </Modal>
         {/* Source Schema Config Modal */}
         <Modal
+         maskClosable={false}
           title="Source Schema Config"
           okText="保存"
           wrapClassName="schema-config-modal ums-modal"
@@ -1911,6 +1913,7 @@ export class Namespace extends React.PureComponent {
         </Modal>
         {/* Sink Schema Config Modal */}
         <Modal
+         maskClosable={false}
           title="Sink Schema Config"
           okText="保存"
           wrapClassName="schema-config-modal ums-modal"

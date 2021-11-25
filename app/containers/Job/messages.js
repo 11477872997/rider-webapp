@@ -33,5 +33,6 @@ export default defineMessages({
   jobModalCancel: { id: 'rider.app.modal.cancel' },
   jobModalSave: { id: 'rider.app.modal.save' },
   jobTableStart: { id: 'rider.app.table.start.action' },
-  jobTableStop: { id: 'rider.app.table.stop.action' }
+  jobTableStop: { id: 'rider.app.table.stop.action' },
+  jobJob: { id: 'rider.components.Navigator.Job' },
 })

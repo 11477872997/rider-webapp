@@ -346,7 +346,7 @@ export class Project extends React.Component {
           <div
             className="ri-project-item active"
             onClick={this.showAdd}
-            style={{backgroundImage: `url(${require(`../../assets/images/bg0.png`)})`, padding: '15px'}}>
+            style={{backgroundImage: `url(${require(`../../assets/images/bg.jpg`)})`, padding: '15px' ,'box-shadow': '2px 7px 7px #ccc'}}>
             <div style={{width: '100%', height: '100%'}}>
               <div className="add-project">
                 <Icon type="plus-circle" />
@@ -390,6 +390,7 @@ export class Project extends React.Component {
           {projectContent}
         </div>
         <Modal
+          maskClosable={false}
           title={modalTitle}
           okText="保存"
           wrapClassName="ant-modal-small ant-modal-xlarge project-modal"
@@ -415,15 +416,30 @@ export class Project extends React.Component {
             </Button>
           ]}
         >
-          <Row className="project-table-style">
-            <div className="ant-col-11">
+          <Row className="project-table-style" style={{"margin-bottom":"5px"}}>
+            <div className="ant-col-24">
               <ProjectForm
                 projectFormType={projectFormType}
                 ref={(f) => { this.projectForm = f }}
               />
             </div>
-            <div className="ant-col-1"></div>
+            {/* <div className="ant-col-1"></div>
             <div className="ant-col-11 pro-table-class project-udf-table">
+              <ProjectUdfTable
+                dataUdf={projectUdfTableDataSource}
+                ref={(f) => { this.projectUdfTable = f }}
+              />
+            </div> */}
+          </Row>
+          <Row className="project-table-style" style={{"margin-bottom":"10px"}}>
+            {/* <div className="ant-col-11">
+              <ProjectForm
+                projectFormType={projectFormType}
+                ref={(f) => { this.projectForm = f }}
+              />
+            </div>
+            <div className="ant-col-1"></div> */}
+            <div className="ant-col-24 ">
               <ProjectUdfTable
                 dataUdf={projectUdfTableDataSource}
                 ref={(f) => { this.projectUdfTable = f }}
@@ -432,14 +448,14 @@ export class Project extends React.Component {
           </Row>
 
           <Row className="project-table-style">
-            <div className="ant-col-11 pro-table-class">
+            <div className="ant-col-11 ">
               <ProjectNSTable
                 dataNameSpace={projectNsTableDataSource}
                 ref={(f) => { this.projectNSTable = f }}
               />
             </div>
             <div className="ant-col-1"></div>
-            <div className="ant-col-11 pro-table-class">
+            <div className="ant-col-11 ">
               <ProjectUsersTable
                 dataUsers={projectUsersTableDataSource}
                 ref={(f) => { this.projectUsersTable = f }}

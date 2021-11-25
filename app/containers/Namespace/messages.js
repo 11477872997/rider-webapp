@@ -60,5 +60,6 @@ export default defineMessages({
   nsShemaUmsOpMsg2: { id: 'rider.containers.Namespace.Modal.configure.umsop2.msg' },
   nsShemaUmsOpMsg3: { id: 'rider.containers.Namespace.Modal.configure.umsop3.msg' },
   nsShemaTableTitle: { id: 'rider.containers.Namespace.Modal.configure.table.title.msg' },
-  nsShemaBtn: { id: 'rider.containers.Namespace.Modal.configure.btn' }
+  nsShemaBtn: { id: 'rider.containers.Namespace.Modal.configure.btn' },
+  nsNamespace: { id: 'rider.components.Navigator.Namespace' },
 })

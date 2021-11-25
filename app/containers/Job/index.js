@@ -812,7 +812,7 @@ export class Job extends React.Component {
       <div className={`ri-workbench-table ri-common-block ${className}`}>
         {helmetHide}
         <h3 className="ri-common-block-title">
-          <Icon type="bars" /> Job <FormattedMessage {...messages.jobTableList} />
+          <Icon type="bars" /><FormattedMessage {...messages.jobJob} /><FormattedMessage {...messages.jobTableList} />
         </h3>
         <div className="ri-common-block-tools">
           {jobAddOrNot}
@@ -827,6 +827,7 @@ export class Job extends React.Component {
           bordered>
         </Table>
         <Modal
+         maskClosable={false}
           title="Logs"
           visible={logsJobModalVisible}
           onCancel={this.handleLogsCancel}

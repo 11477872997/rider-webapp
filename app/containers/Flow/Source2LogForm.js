@@ -154,6 +154,7 @@ export class Source2LogForm extends React.Component {
         </div>
 
         <Modal
+         maskClosable={false}
           title="设置时间"
           visible={this.state.logTimeModalVisible}
           onCancel={this.handleLogTimeCancel}

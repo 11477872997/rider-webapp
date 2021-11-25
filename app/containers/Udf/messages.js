@@ -33,5 +33,6 @@ export default defineMessages({
   udfTableCopy: { id: 'rider.app.table.copy.action' },
   udfModalAdd: { id: 'rider.containers.Udf.modal.title.add' },
   udfModalEdit: { id: 'rider.containers.Udf.modal.title.edit' },
-  udfModalCopy: { id: 'rider.containers.Udf.modal.title.copy' }
+  udfModalCopy: { id: 'rider.containers.Udf.modal.title.copy' },
+  udfUDF: { id: 'rider.components.Navigator.UDF' },
 })

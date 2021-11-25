@@ -42,5 +42,6 @@ export default defineMessages({
   streamModalRate: { id: 'rider.containers.Stream.modal.rate' },
   streamModalApply: { id: 'rider.containers.Stream.modal.apply' },
   streamModalApplyAll: { id: 'rider.containers.Stream.modal.apply.all' },
-  streamSetPriority: { id: 'rider.app.table.priority.action' }
+  streamSetPriority: { id: 'rider.app.table.priority.action' },
+  streamStream: { id: 'rider.components.Navigator.Stream' },
 })

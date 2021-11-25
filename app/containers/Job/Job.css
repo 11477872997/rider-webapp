@@ -1,0 +1,6 @@
+.job-table-detail {
+  width: 600px;
+  overflow-x: auto;
+  overflow-y: auto;
+  height: 260px;
+}

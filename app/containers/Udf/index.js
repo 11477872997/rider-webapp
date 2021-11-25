@@ -701,7 +701,7 @@ export class Udf extends React.PureComponent {
         <Helmet title="Database" />
         <div className="ri-workbench-table ri-common-block">
           <h3 className="ri-common-block-title">
-            <Icon type="bars" /> UDF <FormattedMessage {...messages.udfTableList} />
+            <Icon type="bars" />  <FormattedMessage {...messages.udfUDF} /><FormattedMessage {...messages.udfTableList} />
           </h3>
           <div className="ri-common-block-tools">
             <Button icon="plus" type="primary" onClick={this.showAddUdf} className={udfClassHide}>
@@ -719,6 +719,7 @@ export class Udf extends React.PureComponent {
           </Table>
         </div>
         <Modal
+         maskClosable={false}
           title={udfModalTitle}
           okText="保存"
           wrapClassName="db-form-style"

@@ -597,15 +597,16 @@ export class User extends React.PureComponent {
       <div>
         {helmetHide}
         <div className="ri-workbench-table ri-common-block">
-          <h3 className="ri-common-block-title">
-            <Icon type="bars" /> User <FormattedMessage {...messages.userTableList} />
-          </h3>
-          <div className="ri-common-block-tools">
-            <Button icon="plus" type="primary" onClick={this.showAdd} className={userClassHide}>
-              <FormattedMessage {...messages.userTableCreate} />
-            </Button>
-            <Button icon="reload" type="ghost" className="refresh-button-style" loading={refreshUserLoading} onClick={this.refreshUser}>{refreshUserText}</Button>
-          </div>
+            <h3 className="ri-common-block-title">
+              <Icon type="bars" /> <FormattedMessage {...messages.userUser} /><FormattedMessage {...messages.userTableList} />
+            </h3>
+            <div className="ri-common-block-tools">
+              <Button icon="plus" type="primary" onClick={this.showAdd} className={userClassHide}>
+                <FormattedMessage {...messages.userTableCreate} />
+              </Button>
+              <Button icon="reload" type="ghost" className="refresh-button-style" loading={refreshUserLoading} onClick={this.refreshUser}>{refreshUserText}</Button>
+            </div>
+          
           <Table
             dataSource={this.state.currentUsers}
             columns={columns}
@@ -616,6 +617,7 @@ export class User extends React.PureComponent {
           </Table>
         </div>
         <Modal
+         maskClosable={false}
           title={userTitle}
           okText="保存"
           wrapClassName="db-form-style"

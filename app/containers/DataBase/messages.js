@@ -34,5 +34,6 @@ export default defineMessages({
   dbModalCancel: { id: 'rider.app.modal.cancel' },
   dbModalSave: { id: 'rider.app.modal.save' },
   dbHelpOrcale: { id: 'rider.containers.Database.help.oracle' },
-  dbHelpOthers: { id: 'rider.containers.Database.help.others' }
+  dbHelpOthers: { id: 'rider.containers.Database.help.others' },
+  dbDatabase: { id: 'rider.components.Navigator.Database' },
 })

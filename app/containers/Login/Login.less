@@ -4,40 +4,51 @@
   bottom: 0;
   left: 0;
   right: 0;
-
+  background: url(../../bg.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  zoom: 1;
   .login-bg {
     z-index: @login-bg-index;
   }
 
   .login-panel {
     width: 360px;
-    background-color: fade(#e0e0e0, 80);
-    padding: 20px;
+    // background-color: fade(#e0e0e0, 80);
+    // background-image:linear-gradient(#E6DADA, #274046); 
+    padding: 15px;
     border-radius: 5px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -75%);
+    transform: translate(76%, -100%);
 
     .login-title {
       padding-bottom: 20px;
       font-size: 24px;
       text-align: center;
+      color: #fff;
+      text-shadow: 0 0 black;
     }
 
     .ant-input {
       height: 40px;
       background-color: #eee;
+      border: 1px solid #00000014;
       font-size: 14px;
     }
 
     .ant-form-item {
-      margin-bottom: 8px;
+      margin-bottom: 18px;
     }
 
     .ant-btn {
       width: 100%;
       display: block;
+      background-image:linear-gradient(to right ,#00DBDE, #FC00FF); 
+      color: #fff;
     }
   }
 }

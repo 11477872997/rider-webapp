@@ -66,7 +66,7 @@ export class ProjectForm extends React.Component {
     return (
       <Form>
         <Row gutter={8}>
-          <Col span={24}>
+          <Col span={12}>
             <Card title={<FormattedMessage {...messages.projectInformation} />} className="project-form-card-style project-form-card-style-left">
               <FormItem className="hide">
                 {getFieldDecorator('id', {
@@ -105,7 +105,7 @@ export class ProjectForm extends React.Component {
             </Card>
           </Col>
 
-          <Col span={24}>
+          <Col span={12}>
             <Card title={<FormattedMessage {...messages.projectResource} />} className="project-form-card-style project-form-card-style-right">
               <FormItem label={<FormattedMessage {...messages.projectCpu} />} {...itemStyle}>
                 {getFieldDecorator('resCores', {

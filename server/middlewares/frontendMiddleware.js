@@ -16,7 +16,6 @@ const addDevMiddlewares = (app, webpackConfig) => {
     silent: true,
     stats: 'errors-only'
   })
-
   app.use(middleware)
   app.use(webpackHotMiddleware(compiler))
 

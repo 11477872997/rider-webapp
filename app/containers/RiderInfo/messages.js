@@ -21,5 +21,6 @@
 import { defineMessages } from 'react-intl'
 
 export default defineMessages({
-  riderInfoTableList: { id: 'rider.app.table.list' }
+  riderInfoTableList: { id: 'rider.app.table.list' },
+  riderRiderInfo: { id: 'rider.components.Navigator.RiderInfo' },
 })

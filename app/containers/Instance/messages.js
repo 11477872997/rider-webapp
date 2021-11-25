@@ -32,6 +32,7 @@ export default defineMessages({
   instanceModalCancel: { id: 'rider.app.modal.cancel' },
   instanceModalSave: { id: 'rider.app.modal.save' },
   instanceTableCreate: { id: 'rider.containers.Instance.Modal.create' },
-  instanceTableModify: { id: 'rider.containers.Instance.Modal.modify' }
+  instanceTableModify: { id: 'rider.containers.Instance.Modal.modify' },
+  instanceInstance: { id: 'rider.components.Navigator.Instance' },
 })
 

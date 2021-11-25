@@ -1448,7 +1448,7 @@ export class Manager extends React.Component {
       <div className={`ri-workbench-table ri-common-block ${className}`}>
         {helmetHide}
         <h3 className="ri-common-block-title">
-          <Icon type="bars" /> Stream <FormattedMessage {...messages.streamTableList} />
+          <Icon type="bars" /> <FormattedMessage {...messages.streamStream} /> <FormattedMessage {...messages.streamTableList} />
         </h3>
         <div className="ri-common-block-tools">
           {StreamAddOrNot}
@@ -1464,6 +1464,7 @@ export class Manager extends React.Component {
         </Table>
 
         <Modal
+         maskClosable={false}
           title={modalTitle}
           visible={startModalVisible}
           wrapClassName="ant-modal-large stream-start-renew-modal"
@@ -1507,6 +1508,7 @@ export class Manager extends React.Component {
         </Modal>
 
         <Modal
+         maskClosable={false}
           title={priorityTitle}
           visible={priorityModalVisible}
           wrapClassName="ant-modal-large"
@@ -1523,6 +1525,7 @@ export class Manager extends React.Component {
         </Modal>
 
         <Modal
+         maskClosable={false}
           title="Logs"
           visible={logsModalVisible}
           onCancel={this.handleLogsCancel}

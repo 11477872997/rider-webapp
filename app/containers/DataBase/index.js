@@ -855,7 +855,7 @@ export class DataBase extends React.PureComponent {
         <Helmet title="Database" />
         <div className="ri-workbench-table ri-common-block">
           <h3 className="ri-common-block-title">
-            <Icon type="bars" /> DataBase <FormattedMessage {...messages.dbTableList} />
+            <Icon type="bars" /> <FormattedMessage {...messages.dbDatabase} /> <FormattedMessage {...messages.dbTableList} />
           </h3>
           <div className="ri-common-block-tools">
             <Button icon="plus" type="primary" onClick={this.showAddDB}>
@@ -881,6 +881,7 @@ export class DataBase extends React.PureComponent {
           />
         </div>
         <Modal
+          maskClosable={false}
           title={modalTitle}
           okText="保存"
           wrapClassName="db-form-style"

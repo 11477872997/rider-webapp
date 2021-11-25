@@ -1,0 +1,12 @@
+body {
+  background-color: #e6ebed;
+}
+.ri-main {
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

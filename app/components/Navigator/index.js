@@ -269,48 +269,56 @@ class Navigator extends React.Component {
         onClick={this.navClick}
       >
         <MenuItem key="projects" className={`ri-menu-item ${projectSelectedClass} ri-menu-item-icon`}>
-          <Icon type="appstore-o" className="item-icon-extra" />Project
+          <Icon type="appstore-o" className="item-icon-extra" />
+          <FormattedMessage {...messages.navProject} />
         </MenuItem>
         <MenuItem key="flows" className="ri-menu-item ri-menu-item-icon">
-          <i className="iconfont icon-flow item-i-extra"></i>Flow
+          <i className="iconfont icon-flow item-i-extra"></i>
+          <FormattedMessage {...messages.navFlow} />
         </MenuItem>
         <MenuItem key="streams" className="ri-menu-item ri-menu-item-icon">
-          <Icon type="barcode" className="item-icon-extra" />Stream
+          <i className="iconfont icon-flow item-i-extra"></i>
+          <FormattedMessage {...messages.navStream} />
         </MenuItem>
-
         <MenuItem key="jobs" className="ri-menu-item ri-menu-item-icon">
-          <i className="iconfont icon-job item-i-extra"></i>Job
+          <i className="iconfont icon-job item-i-extra"></i>
+          <FormattedMessage {...messages.navJob} />
         </MenuItem>
-
         <SubMenu
           onTitleClick={this.navClickSubmenu}
           key="dataSystem"
           className={`ri-menu-item ${dataSystemSelectedClass}`}
           title={
             <span>
-              <i className="iconfont icon-system-copy item-i-extra"></i>Namespace<Icon type="down" className="arrow" />
+              <i className="iconfont icon-system-copy item-i-extra"></i>
+              <FormattedMessage {...messages.navNamespace} />
+              <Icon type="down" className="arrow" />
             </span>
           }>
           <MenuItem key="namespaces">
-            <Icon type="menu-unfold" className="item-icon-extra" />Namespace
+            <Icon type="menu-unfold" className="item-icon-extra" />
+            <FormattedMessage {...messages.navNamespace} />
           </MenuItem>
           <MenuItem key="instance">
-            <i className="iconfont icon-instanceobjgcroot item-i-extra"></i>Instance
+            <i className="iconfont icon-instanceobjgcroot item-i-extra"></i>
+            <FormattedMessage {...messages.navInstance} />
           </MenuItem>
           <MenuItem key="database">
-            <Icon type="database" className="item-icon-extra" />Database
+            <Icon type="code" className="item-icon-extra" />
+            <FormattedMessage {...messages.navDatabase} />
           </MenuItem>
         </SubMenu>
-
         <MenuItem key="users" className="ri-menu-item ri-menu-item-icon">
-          <Icon type="solution" className="item-icon-extra" />User
+          <Icon type="solution" className="item-icon-extra" />
+          <FormattedMessage {...messages.navUser} />
         </MenuItem>
         <MenuItem key="udf" className="ri-menu-item ri-menu-item-icon">
-          <Icon type="menu-fold" className="item-icon-extra" />UDF
+          <Icon type="menu-fold" className="item-icon-extra" />
+          <FormattedMessage {...messages.navUDF} />
         </MenuItem>
-
         <MenuItem key="riderInfo" className="ri-menu-item ri-menu-item-icon">
-          <i className="iconfont icon-infor item-i-extra"></i>Rider Info
+          <i className="iconfont icon-infor item-i-extra"></i>
+          <FormattedMessage {...messages.navRiderInfo} />
         </MenuItem>
       </Menu>
     )
@@ -324,49 +332,55 @@ class Navigator extends React.Component {
         onClick={this.navClick}
       >
         <MenuItem key="projects" className={`ri-menu-item ${projectSelectedClass} ri-menu-item-icon`}>
-          <Icon type="appstore-o" className="item-icon-extra" />Project
+          <FormattedMessage {...messages.navProject} />
         </MenuItem>
         <MenuItem key="flows" className="ri-menu-item ri-menu-item-icon">
-          <i className="iconfont icon-flow item-i-extra"></i>Flow
+          <i className="iconfont icon-flow item-i-extra"></i>
+          <FormattedMessage {...messages.navFlow} />
         </MenuItem>
         <MenuItem key="streams" className="ri-menu-item ri-menu-item-icon">
-          <Icon type="barcode" className="item-icon-extra" />Stream
+          <Icon type="barcode" className="item-icon-extra" />
+          <FormattedMessage {...messages.navStream} />
         </MenuItem>
-
         <MenuItem key="jobs" className="ri-menu-item ri-menu-item-icon">
-          <i className="iconfont icon-job item-i-extra"></i>Job
+          <i className="iconfont icon-job item-i-extra"></i>
+          <FormattedMessage {...messages.navJob} />
         </MenuItem>
-
         <SubMenu
           onTitleClick={this.navClickSubmenu}
           key="dataSystem"
           className={`ri-menu-item ${dataSystemSelectedClass}`}
           title={
             <span>
-              <i className="iconfont icon-system-copy item-i-extra"></i>Namespace
+              <i className="iconfont icon-system-copy item-i-extra"></i>
+              <FormattedMessage {...messages.navNamespace} />
             </span>
           }
         >
           <MenuItem key="namespaces" style={{ backgroundColor: '#424242' }}>
-            <Icon type="menu-unfold" className="item-icon-extra" />Namespace
+            <Icon type="menu-unfold" className="item-icon-extra" />
+            <FormattedMessage {...messages.navNamespace} />
           </MenuItem>
           <MenuItem key="instance" style={{ backgroundColor: '#424242' }}>
-            <i className="iconfont icon-instanceobjgcroot item-i-extra"></i>Instance
+            <i className="iconfont icon-instanceobjgcroot item-i-extra"></i>
+            <FormattedMessage {...messages.navInstance} />
           </MenuItem>
           <MenuItem key="database" style={{ backgroundColor: '#424242' }}>
-            <Icon type="database" className="item-icon-extra" />Database
+            <Icon type="code" className="item-icon-extra" />
+            <FormattedMessage {...messages.navDatabase} />
           </MenuItem>
         </SubMenu>
-
         <MenuItem key="users" className="ri-menu-item ri-menu-item-icon">
-          <Icon type="solution" className="item-icon-extra" />User
+          <Icon type="solution" className="item-icon-extra" />
+          <FormattedMessage {...messages.navUser} />
         </MenuItem>
         <MenuItem key="udf" className="ri-menu-item ri-menu-item-icon">
-          <Icon type="menu-fold" className="item-icon-extra" />UDF
+          <Icon type="menu-fold" className="item-icon-extra" />
+          <FormattedMessage {...messages.navUDF} />
         </MenuItem>
-
         <MenuItem key="riderInfo" className="ri-menu-item ri-menu-item-icon">
-          <i className="iconfont icon-infor item-i-extra"></i>Rider Info
+          <i className="iconfont icon-infor item-i-extra"></i>
+          <FormattedMessage {...messages.navRiderInfo} />
         </MenuItem>
       </Menu>
     )
@@ -421,6 +435,7 @@ class Navigator extends React.Component {
         <nav>
           <div className="ri-logo-href" onClick={this.logoChange}>
             <img src={require(`../../assets/images/logo.png`)} alt="Wormhole" className={logoImgClass} />
+            <h2 className="ri-logo-text">数据治理平台-实时处理系统</h2>
           </div>
           {node}
 
@@ -443,6 +458,7 @@ class Navigator extends React.Component {
           </div>
 
           <Modal
+            maskClosable={false}
             title={<FormattedMessage {...messages.navChangePsw} />}
             okText="保存"
             wrapClassName="db-form-style"
